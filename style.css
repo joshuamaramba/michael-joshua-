@@ -1,0 +1,216 @@
+ol,
+li {
+    list-style: none;
+}
+
+body {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 70%;
+}
+
+header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    min-height: 90vh;
+    min-width: 430px;
+    background-color: #ce4049;
+    background-image: url(../images-pattern-intro.svg);
+    background-position: -50vh -30vh;
+    background-size: 195vh;
+    background-repeat: repeat;
+    border-bottom-left-radius: 100px;
+}
+
+header ._gradient {
+    position: absolute;
+    width: 100%;
+    min-height: 90vh;
+    background: #fe4c58;
+    background: -webkit-gradient(linear, left top, left bottom, from(#fe4c58), color-stop(37%, rgba(254, 76, 88, 0.868785)), color-stop(80%, rgba(254, 76, 88, 0.753939)));
+    background: linear-gradient(180deg, #fe4c58 0%, rgba(254, 76, 88, 0.868785) 37%, rgba(254, 76, 88, 0.753939) 80%);
+    border-bottom-left-radius: 100px;
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#fe4c58", endColorstr="#fe4c58", GradientType=1);
+}
+
+header nav {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    position: absolute;
+    max-width: 100%;
+    min-width: 100%;
+    margin-top: 2em;
+    z-index: 3;
+}
+
+header nav .logo {
+    width: 70%;
+    padding: 2.5em;
+}
+
+header nav .logo img {
+    width: 7em;
+}
+
+header nav .nav-toggle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 30%;
+}
+
+header nav>ul {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    display: none;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    position: fixed;
+    top: 15%;
+    width: 80%;
+    min-height: 75vh;
+    padding: 1.5em;
+    background-color: #fff;
+    -webkit-box-shadow: 0 0 1.4em rgba(0, 0, 0, 0.342);
+    box-shadow: 0 0 1.4em rgba(0, 0, 0, 0.342);
+}
+
+header nav>ul .links {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+header nav>ul .links li {
+    width: 100%;
+}
+
+header nav>ul .links li a {
+    font-family: "Overpass", sans-serif;
+    font-size: 1rem;
+    color: #000;
+    text-align: center;
+    display: block;
+    padding: 1em;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+header nav>ul .links li a img {
+    padding-left: 0.5em;
+    -webkit-transition: 0.5s ease;
+    transition: 0.5s ease;
+}
+
+header nav>ul .links li ul {
+    display: none;
+    width: 100%;
+    padding: 0;
+    background-color: #efeff1;
+}
+
+header nav>ul .links li ul li {
+    width: auto;
+}
+
+header nav>ul .session {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    gap: 1em;
+}
+
+header nav>ul .session a {
+    font-family: "Overpass", sans-serif;
+    font-size: 1rem;
+    color: hsl(208, 49%, 24%);
+    text-align: center;
+    display: block;
+    width: 50%;
+    padding: 1em;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav>ul .session .login {
+    background-color: hsl(355, 100%, 74%);
+    font: hsl(356, 100%, 66%);
+}
+
+header nav>ul .session .sign-up {
+    font: hsl(356, 100%, 66%);
+    background-color: hsl(355, 100%, 74%);
+}
+
+header .post-header {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
